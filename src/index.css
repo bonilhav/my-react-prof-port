@@ -1,0 +1,123 @@
+:root {
+    --dkblue: midnightblue;
+    --wtsmoke: whitesmoke;
+    --dkpurple: rgb(33, 2, 42);
+    --ltpurple: rgb(190, 172, 195);
+    --mdgrey: rgb(165, 165, 165);
+    --ltgrey: rgb(207, 207, 207);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mate SC', serif;;
+    /* background-color: #313033; */
+    background: rgb(33,2,42);
+    background: linear-gradient(143deg, rgba(33,2,42,1) 23%, rgba(190,172,195,1) 70%, rgba(207,207,207,1) 100%);
+}
+
+#vb-css {
+    color: var(--wtsmoke);
+    font-weight: 600; 
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 2%;
+}
+
+#info {
+    color: var(--dkpurple);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#prim-know {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: Courgette, 'Apple Chancery', cursive, sans-serif;
+    padding:2px;
+}
+
+h2 {
+    font-size: 1.70rem;
+    font-family: Courgette, 'Apple Chancery', cursive, sans-serif;
+    padding:2px;
+}
+
+#about-me {
+    background-color: var(--dkpurple);
+    color: var(--wtsmoke);
+    padding: 15px;
+    margin: 2%;
+    font-family: Nunito, Georgia, cursive, sans-serif;
+    line-height: 22px;
+    font-size: 1.40rem;
+}
+
+#portfolio {
+    background: rgb(33,2,42);
+    background: linear-gradient(143deg, rgba(33,2,42,1) 23%, rgba(190,172,195,1) 70%, rgba(207,207,207,1) 100%);
+    color: var(--wtsmoke);
+    font-size: 1.2rem;
+}
+
+.purpose {
+    font-family: Nunito, Georgia, cursive, sans-serif;
+    color: var(--dkblue);
+}
+
+.card{
+    background-color: var(--ltgrey);
+}
+
+.card-link {
+    color: var(--dkblue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#contact-me {
+    background-color: var(--dkpurple);
+    color: var(--wtsmoke);
+    padding: 15px;
+    margin: 2%;
+}
+
+.email{
+    color: var(--wtsmoke);
+}
+
+.email:hover{
+    color: var(--ltpurple);
+}
+
+#button {
+    padding: 10px 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: var(--dkblue);
+    background-color: var(--ltpurple);
+    border: none;
+    border-radius: 15px;
+}
+
+footer {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 1%;
+    margin-top: 1%;
+}

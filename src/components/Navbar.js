@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
+        backgroundColor: 'rgb(33, 2, 42)'
     },
     appBarShift: {
         width: `calc(100% - ${drawerWidth}px)`,
@@ -51,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
     },
     drawerPaper: {
         width: drawerWidth,
+        backgroundColor: 'rgb(190, 172, 195)'
     },
     drawerHeader: {
         display: 'flex',
@@ -59,6 +61,10 @@ const useStyles = makeStyles((theme) => ({
         // necessary for content to be below app bar
         ...theme.mixins.toolbar,
         justifyContent: 'flex-end',
+        
+    },
+    fontColor:{
+        color: 'midnightblue',
     },
     content: {
         flexGrow: 1,
@@ -98,7 +104,7 @@ export default function PersistentDrawerLeft(props) {
                 position="fixed"
                 className={clsx(classes.appBar, {
                     [classes.appBarShift]: open,
-                })}
+                })} style={{backgroundColor: 'darkPurple'}}
             >
                 <Toolbar>
                     <IconButton
@@ -130,13 +136,15 @@ export default function PersistentDrawerLeft(props) {
                     </IconButton>
                 </div>
                 <Divider />
-                <List>
-                    {[{ name: 'AboutMe', route: '/aboutme' },
+                <List >
+                    {[{ name: 'About Me', route: '/aboutme' },
                     { name: 'Projects', route: '/projects' },
+                    { name: 'Contact Me', route: '/contactme' },
+                    { name: 'Resume', route: '/resume' },
                     ].map((text, index) => (
                         <ListItem component={Link} key={index} to={text.route}>
                             <ListItemIcon>{index % 2 === 0 ? <InfoIcon /> : <CodeIcon />}</ListItemIcon>
-                            <ListItemText primary={text.name} />
+                            <ListItemText className={classes.fontColor} primary={text.name} />
                         </ListItem>
                     ))}
                 </List>
