@@ -25,7 +25,7 @@ export const MediaCard = ({ projects }) => {
         <Grid class="min-vh-100">
             <Grid className={classes.justify}>
                 {projects.map((project) => (
-                    <Card className={classes.card} sx={{ maxWidth: 345 }}>
+                    <Card className={classes.card} sx={{ maxWidth: 345 }} >
                         <CardMedia
                             component="img"
                             image={project.image}
@@ -40,8 +40,8 @@ export const MediaCard = ({ projects }) => {
                             </Typography>
                         </CardContent>
                         <CardActions class="d-flex justify-content-center p-2">
-                        <a id="icons" class="align-self-center p-2" href={project.github} aria-label="Github" target="_blank"><i class="fab fa-github fa-3x socialicons"></i></a>
-                        <a id="icons" class="align-self-center p-2" href={project.site} aria-label="Website" target="_blank">Website</a>
+                            <a id="icons" class="align-self-center p-2" href={project.github} aria-label="Github" target="_blank"><i class="fab fa-github fa-3x socialicons"></i></a>
+                            <a id="icons" class="align-self-center p-2" href={project.site} aria-label="Website" target="_blank">Website</a>
                         </CardActions>
                     </Card>
                 ))}
