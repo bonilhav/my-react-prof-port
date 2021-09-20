@@ -47,7 +47,7 @@ export default function FullWidthGrid() {
                         Skills
                     </h1>
                     <Typography className={classes.font} margin={2} variant="body1" gutterBottom>
-                        Knowledge of HTML5, CSS3, JavaScript, jQuery, Node.js, PHP, Laravel, Express.js,
+                        Knowledge of HTML5, CSS3, JavaScript, jQuery, Node.js, Express.js,
                         React.js, Database Theory, MongoDB, MySQL, Command Line, and Git.
                     </Typography>
                 </Container>

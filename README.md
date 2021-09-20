@@ -14,8 +14,8 @@
         - Day Planner
         - What's the Weather 
 
-  ![Screenshot](./public/images/professionalPortfolio.png)
- (https://bonilhav.github.io/Professional-Portfolio/)
+  ![Screenshot](./src/images/professionalPortfolio.png)
+ (https://vanessabonilha-portfolio.herokuapp.com/)
 
   ## Table of Contents
 
@@ -30,7 +30,7 @@
 
   Please install the following dependances:
   
-  @testing-library/jest-dom, @testing-library/react, @testing-library/user-event, react, react-dom, react-scripts, web-vitals
+  @emotion/react, @emotion/styled, @material-ui/core, @material-ui/icons, @mui/icons-material, @mui/material, bootstrap, @testing-library/jest-dom, @testing-library/react, @testing-library/user-event, react, react-dom, react-router-dom, react-scripts, web-vitals
   
   ## Usage
 
