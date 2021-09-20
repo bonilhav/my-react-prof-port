@@ -18,6 +18,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import CodeIcon from '@material-ui/icons/Code';
 import InfoIcon from '@material-ui/icons/Info';
+import HomeIcon from '@mui/icons-material/Home';
 
 const drawerWidth = 240;
 
@@ -42,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
     },
     menuButton: {
         marginRight: theme.spacing(2),
+        color: 'whitesmoke'
     },
     hide: {
         display: 'none',
@@ -61,9 +63,8 @@ const useStyles = makeStyles((theme) => ({
         // necessary for content to be below app bar
         ...theme.mixins.toolbar,
         justifyContent: 'flex-end',
-        
     },
-    fontColor:{
+    fontColor: {
         color: 'midnightblue',
     },
     content: {
@@ -104,7 +105,7 @@ export default function PersistentDrawerLeft(props) {
                 position="fixed"
                 className={clsx(classes.appBar, {
                     [classes.appBarShift]: open,
-                })} style={{backgroundColor: 'darkPurple'}}
+                })} style={{ backgroundColor: 'darkPurple' }}
             >
                 <Toolbar>
                     <IconButton
@@ -117,6 +118,9 @@ export default function PersistentDrawerLeft(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap>
+                        <Link to="/">
+                            <HomeIcon className={classes.menuButton} />
+                        </Link>
                         Vanessa Bonilha
                     </Typography>
                 </Toolbar>

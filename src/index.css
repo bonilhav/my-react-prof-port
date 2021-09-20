@@ -9,11 +9,16 @@
 
 * {
     box-sizing: border-box;
+    
 }
 
 body {
-    font-family: 'Mate SC', serif;;
-    /* background-color: #313033; */
+    font-family: 'Mate SC', serif;
+    background-color: rgb(165, 165, 165);
+    
+}
+
+#main {
     background: rgb(33,2,42);
     background: linear-gradient(143deg, rgba(33,2,42,1) 23%, rgba(190,172,195,1) 70%, rgba(207,207,207,1) 100%);
 }
@@ -53,6 +58,13 @@ h2 {
     font-size: 1.70rem;
     font-family: Courgette, 'Apple Chancery', cursive, sans-serif;
     padding:2px;
+}
+
+#icons {
+    font-size: '50px';
+    margin: 2%;
+    color: var(--dkblue);
+
 }
 
 #about-me {

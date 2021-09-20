@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
     return (
-        <main /* id="main" */>
+        <main id="main">
         <div 
             class="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0 jumbotron jumbotron-fluid">
             <div class="text-center container">
