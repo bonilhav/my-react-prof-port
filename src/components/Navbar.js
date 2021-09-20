@@ -69,7 +69,6 @@ const useStyles = makeStyles((theme) => ({
     },
     content: {
         flexGrow: 1,
-        padding: theme.spacing(3),
         transition: theme.transitions.create('margin', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
@@ -143,7 +142,6 @@ export default function PersistentDrawerLeft(props) {
                 <List >
                     {[{ name: 'About Me', route: '/aboutme' },
                     { name: 'Projects', route: '/projects' },
-                    { name: 'Contact Me', route: '/contactme' },
                     { name: 'Resume', route: '/resume' },
                     ].map((text, index) => (
                         <ListItem component={Link} key={index} to={text.route}>
