@@ -7,7 +7,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
-
 const useStyles = makeStyles((theme) => ({
     justify: {
         display: 'flex',
@@ -28,7 +27,7 @@ export const MediaCard = ({ projects }) => {
                     <Card className={classes.card} sx={{ maxWidth: 345 }} >
                         <CardMedia
                             component="img"
-                            image={project.image}
+                            src={project.image}
                             alt={project.name}
                         />
                         <CardContent >

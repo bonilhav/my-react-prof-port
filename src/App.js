@@ -8,7 +8,7 @@ import ContactMe from './components/ContactMe';
 import Resume from './components/Resume';
 import Navbar from './components/Navbar';
 
-import projects from './projects';
+import projects from './projects.json';
 
 const App = () => {
   return (
@@ -19,9 +19,9 @@ const App = () => {
       <Grid>
         <Switch>
           <Route path='/aboutme' component={AboutMe} />
-          <Route path='/projects' component={Projects}>
+          <Route path='/projects'>
             <Projects projects={projects} />
-          </Route>/
+          </Route>
           <Route path='/contactme' component={ContactMe} />
           <Route path='/resume' component={Resume} />
           <Route path='/' component={Home} />
